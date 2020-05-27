@@ -1,0 +1,16 @@
+<div class="form-group">
+  <label for="Image">Select Image:</label>
+  <select
+    class="form-control"
+    id="Image"
+    (change)="onChange($event.target.value)"
+  >
+    <ng-container *ngFor="let item of imglist">
+      <option value="{{ item.imgurl }}"
+        ><img [src]="item.imgurl" width="100px" />{{ item.id }}</option
+      >
+    </ng-container>
+  </select>
+</div>
+<p>View Image</p>
+<img src="{{ img }}" class="img" />

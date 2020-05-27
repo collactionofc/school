@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+
+.container{
+
+    .borders{
+        width: 18rem;
+        text-align: center;
+        border-color: black !important;
+        border-width: 1px !important;
+        border-style: groove;
+        border-radius: 10%;
+        display: inline-block;
+        padding: 5px;
+    }
+    img{
+        width: 64%!important;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        border-radius: 50%;
+        border-radius: 50%;
+    }
+    .one{
+        float: right;
+        cursor: pointer;
+    }
+    .two{
+        cursor: pointer;
+        float:left;
+    }
+}
+
+.round{
+    border-radius: 51%;
+    color: white;
+    font-size: 25px;
+    padding: 0px 10px;
+}

@@ -1,0 +1,16 @@
+<div class="p-2">
+  <button class="btn btn-primary" [routerLink]="['/']" style="color:white">< BACK</button>
+</div>
+<div style="float:right;padding: 10px;">
+    <button class="btn btn-primary round" [routerLink]="[ 'add' ]" >+</button>
+</div>
+    <div class="text-center">
+        <span style="font-size: 35px;"><b>Students</b></span>&nbsp;
+      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4  p-3" *ngFor="let item of data">
+      <app-card  name="{{item.name}}" Secoundfield="{{item.city}}" image="{{item.imageurl}}" delete="{{item.id}}" type="{{'student'}}"></app-card>
+    </div>
+  </div>
+</div>
